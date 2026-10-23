@@ -1,0 +1,66 @@
+<!-- 
+  Конструктор (Разработчик): Бензиан Мерхум
+  Класс: 9С
+  Четверть: 1 четверть
+  Проект: Устройства компьютера
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Устройства компьютера</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--fg:#1f2430;--muted:#5b6275;--accent:#2f5fd0;--accent-fg:#fff;--line:#dcd9d0;--ph:#e4e9f7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171c;--card:#1e2128;--fg:#eceef3;--muted:#a3a9b8;--accent:#7a9cf0;--accent-fg:#10131a;--line:#323643;--ph:#262c40}}
+:root[data-theme="dark"]{--bg:#15171c;--card:#1e2128;--fg:#eceef3;--muted:#a3a9b8;--accent:#7a9cf0;--accent-fg:#10131a;--line:#323643;--ph:#262c40}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:16px 24px;background:var(--card);border-bottom:1px solid var(--line)}
+.logo{width:40px;height:40px;border-radius:8px;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;font-weight:700}
+.site{font-size:20px;font-weight:700;margin-right:auto}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px}
+nav a{color:var(--fg);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent)}
+main{max-width:960px;margin:0 auto;padding:24px}
+.banner{height:220px;border-radius:12px;background:var(--ph);border:1px dashed var(--accent);overflow:hidden}
+.banner img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:30px;margin:24px 0 8px}
+.lead{color:var(--muted);font-size:18px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card .img{height:130px;background:var(--ph);overflow:hidden}
+.card .img img{width:100%;height:100%;object-fit:cover;display:block}
+.card div.t{padding:16px}
+.card h2{font-size:19px;margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+footer{margin-top:32px;padding:20px 24px;background:var(--card);border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">УК</div>
+<div class="site">Устройства компьютера</div>
+<nav>
+<a href="#top">Главная</a><a href="#cpu">Процессор</a><a href="#ram">Оперативная память</a><a href="#disk">Жёсткий диск/SSD</a><a href="#gpu">Видеокарта</a><a href="#board">Материнская плата</a><a href="#psu">Блок питания</a>
+</nav>
+</header>
+<main id="top">
+<div class="banner">
+<img src="banner.jpg" alt="Баннер">
+</div>
+<h1>Из чего состоит компьютер</h1>
+<p class="lead">На этом сайте вы узнаете, из каких основных устройств состоит компьютер и зачем они нужны.</p>
+<div class="grid">
+<section class="card" id="cpu"><div class="img"><img src="cpu.jpg" alt="Процессор"></div><div class="t"><h2>Процессор</h2><p>Процессор — «мозг» компьютера: он выполняет программы и обрабатывает данные. Чем больше ядер и выше частота, тем быстрее компьютер справляется с задачами.</p></div></section>
+<section class="card" id="ram"><div class="img"><img src="ram.jpg" alt="Оперативная память"></div><div class="t"><h2>Оперативная память</h2><p>Оперативная память хранит данные и программы, с которыми компьютер работает прямо сейчас. При выключении питания её содержимое стирается.</p></div></section>
+<section class="card" id="disk"><div class="img"><img src="disk.jpg" alt="Жёсткий диск / SSD"></div><div class="t"><h2>Жёсткий диск / SSD</h2><p>Эти устройства хранят файлы, программы и операционную систему постоянно. SSD работает быстрее и тише, а жёсткий диск дешевле при большом объёме.</p></div></section>
+<section class="card" id="gpu"><div class="img"><img src="gpu.jpg" alt="Видеокарта"></div><div class="t"><h2>Видеокарта</h2><p>Видеокарта формирует изображение на мониторе. Она особенно важна для игр, видео и 3D-графики.</p></div></section>
+<section class="card" id="board"><div class="img"><img src="board.jpg" alt="Материнская плата"></div><div class="t"><h2>Материнская плата</h2><p>Материнская плата соединяет все устройства в единую систему. На ней расположены разъёмы для процессора, памяти, видеокарты и дисков.</p></div></section>
+<section class="card" id="psu"><div class="img"><img src="psu.jpg" alt="Блок питания"></div><div class="t"><h2>Блок питания</h2><p>Блок питания преобразует ток из розетки и подаёт его на все компоненты. Его мощность должна соответствовать комплектующим.</p></div></section>
+</div>
+</main>
+<footer>© 2026. Учебный проект. Карта сайта. Социальные сети.</footer>
+</body>
+</html>
